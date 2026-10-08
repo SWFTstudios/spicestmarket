@@ -1,0 +1,1282 @@
+{
+  "headline": "Our Recipes",
+  "lede": "One recipe for every blend on the rack. Pick a street, meet us at the corner, and cook something that makes you sneeze.",
+  "packs": [
+    {
+      "id": "familiar-favorites",
+      "name": "Familiar Favorites",
+      "short": "Everyday heat for the table you already know.",
+      "amazon": "https://a.co/d/3LUf0Cg"
+    },
+    {
+      "id": "neighborhood-cookout",
+      "name": "Neighborhood Cook-Out",
+      "short": "Block-party smoke, grill nights and backyard bites.",
+      "amazon": "https://a.co/d/aasmWjD"
+    },
+    {
+      "id": "around-the-world",
+      "name": "Around the World",
+      "short": "Passport flavors from bodega nights to far-off kitchens.",
+      "amazon": "https://a.co/d/fJrYEfP"
+    }
+  ],
+  "recipes": [
+    {
+      "slug": "roasted-potato",
+      "pack": "familiar-favorites",
+      "blend": "Roasted Potato",
+      "street": [
+        "Roasted",
+        "Potato"
+      ],
+      "blendType": "Roasted Potato Seasoning Blend",
+      "tagline": "Everyday is Fry-Day",
+      "color": "#c2375a",
+      "tin": "/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e11d5972d3de52bfd1_46791_L_01.webp",
+      "photo": null,
+      "notes": [
+        "Salt",
+        "Paprika",
+        "Garlic",
+        "Black pepper",
+        "Turmeric"
+      ],
+      "title": "Fry-Day Crispy Smashed Potatoes",
+      "blurb": "Boiled soft, smashed flat, roasted until the edges shatter. Fries who?",
+      "servings": 4,
+      "prep": 10,
+      "cook": 45,
+      "heat": 0,
+      "ingredients": [
+        {
+          "q": 2,
+          "u": "lb",
+          "i": "baby gold potatoes"
+        },
+        {
+          "q": 1,
+          "u": "tbsp",
+          "i": "kosher salt, for the boiling water"
+        },
+        {
+          "q": 3,
+          "u": "tbsp",
+          "i": "olive oil"
+        },
+        {
+          "q": 2,
+          "u": "tbsp",
+          "i": "Roasted Potato blend",
+          "blend": true
+        },
+        {
+          "q": 2,
+          "u": "tbsp",
+          "i": "butter, melted"
+        },
+        {
+          "q": 0.25,
+          "u": "cup",
+          "i": "grated parmesan"
+        },
+        {
+          "q": 2,
+          "u": "tbsp",
+          "i": "chopped chives"
+        },
+        {
+          "q": 0.5,
+          "u": "cup",
+          "i": "sour cream, for dipping"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Drop the potatoes into a pot of cold, salted water. Bring to a boil and cook until a fork slides right in.",
+          "min": 18
+        },
+        {
+          "t": "Drain and let them steam-dry in the colander while the oven heats to 450°F (230°C).",
+          "min": 5
+        },
+        {
+          "t": "Oil a sheet pan. Smash each potato to about ½ inch thick with the bottom of a glass."
+        },
+        {
+          "t": "Drizzle with the olive oil and melted butter, then shower everything with Roasted Potato blend."
+        },
+        {
+          "t": "Roast until the bottoms are deep golden, then flip and give them another 5–10 minutes.",
+          "min": 25
+        },
+        {
+          "t": "Hit them with parmesan, chives and one more pinch of blend. Dunk in sour cream."
+        }
+      ],
+      "tip": "Let them steam-dry. Dry potatoes get crispy edges. Wet potatoes get sad."
+    },
+    {
+      "slug": "everyday-flavor",
+      "pack": "familiar-favorites",
+      "blend": "Everyday Flavor",
+      "street": [
+        "Everyday",
+        "Flavor"
+      ],
+      "blendType": "All-Purpose Seasoning",
+      "tagline": "I'll have the usual please",
+      "color": "#2f8fa3",
+      "tin": "/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d2fb3bbbbd0fc321f3b5b6_46786_L_01.avif",
+      "photo": null,
+      "notes": [
+        "Onion",
+        "Mustard",
+        "Tomato",
+        "Parsley",
+        "Garlic",
+        "Lemon peel"
+      ],
+      "title": "The Usual: Bodega Bacon, Egg & Cheese",
+      "blurb": "The corner-store classic, foil-wrapped and seasoned like you mean it.",
+      "servings": 2,
+      "prep": 5,
+      "cook": 10,
+      "heat": 0,
+      "ingredients": [
+        {
+          "q": 4,
+          "u": "",
+          "i": "large eggs"
+        },
+        {
+          "q": 4,
+          "u": "slices",
+          "i": "bacon"
+        },
+        {
+          "q": 2,
+          "u": "",
+          "i": "kaiser rolls, split"
+        },
+        {
+          "q": 2,
+          "u": "slices",
+          "i": "American cheese"
+        },
+        {
+          "q": 1,
+          "u": "tbsp",
+          "i": "butter"
+        },
+        {
+          "q": 1,
+          "u": "tsp",
+          "i": "Everyday Flavor blend",
+          "blend": true
+        },
+        {
+          "q": null,
+          "u": "",
+          "i": "ketchup and hot sauce, to taste"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Cook the bacon in a skillet over medium heat until crisp. Set it aside and keep about 1 tbsp of the fat in the pan.",
+          "min": 6
+        },
+        {
+          "t": "Toast the rolls cut-side down in the bacon fat until golden, about a minute."
+        },
+        {
+          "t": "Whisk the eggs with Everyday Flavor. Melt the butter, pour in the eggs and cook a flat omelet. Fold it to roll size."
+        },
+        {
+          "t": "Lay the cheese on the eggs, cover the pan and let it melt, about 30 seconds."
+        },
+        {
+          "t": "Stack eggs, bacon, ketchup and hot sauce on the rolls. Wrap each one in foil for a minute before you eat."
+        }
+      ],
+      "tip": "Don't skip the foil. That minute of steam is what makes it taste like the corner store."
+    },
+    {
+      "slug": "prime-steak",
+      "pack": "familiar-favorites",
+      "alsoIn": [
+        "neighborhood-cookout"
+      ],
+      "blend": "Prime Steak",
+      "street": [
+        "Prime",
+        "Steak"
+      ],
+      "blendType": "Steakhouse Seasoning",
+      "tagline": "Oh, won't you steak with me",
+      "color": "#c8352b",
+      "tin": "/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9df08f1bac4d1d59a99_46792_L_01.webp",
+      "photo": null,
+      "notes": [
+        "Black pepper",
+        "Mustard",
+        "Sage",
+        "Soy sauce",
+        "Chipotle",
+        "Fennel"
+      ],
+      "title": "Steak With Me: Cast-Iron Ribeye & Garlic Butter",
+      "blurb": "Hard sear, butter baste, steakhouse crust. Date night handled.",
+      "servings": 2,
+      "prep": 10,
+      "cook": 15,
+      "heat": 1,
+      "ingredients": [
+        {
+          "q": 2,
+          "u": "",
+          "i": "ribeye steaks, 1¼ inch thick (about 12 oz each)"
+        },
+        {
+          "q": 1,
+          "u": "tbsp",
+          "i": "Prime Steak blend",
+          "blend": true
+        },
+        {
+          "q": 1,
+          "u": "tbsp",
+          "i": "neutral oil"
+        },
+        {
+          "q": 3,
+          "u": "tbsp",
+          "i": "butter"
+        },
+        {
+          "q": 4,
+          "u": "cloves",
+          "i": "garlic, smashed"
+        },
+        {
+          "q": 3,
+          "u": "sprigs",
+          "i": "fresh thyme"
+        },
+        {
+          "q": null,
+          "u": "",
+          "i": "flaky salt, to finish"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Pat the steaks dry and season every side with Prime Steak. Let them sit uncovered at room temperature.",
+          "min": 40
+        },
+        {
+          "t": "Heat a cast-iron pan on high until it just starts to smoke, then add the oil."
+        },
+        {
+          "t": "Lay in the steaks and sear without moving them. Flip once and sear the other side for the same time.",
+          "min": 3
+        },
+        {
+          "t": "Drop to medium. Add butter, garlic and thyme, tilt the pan and baste for 1–2 minutes, until the center reads 130°F (54°C) for medium-rare."
+        },
+        {
+          "t": "Rest on a board, then slice against the grain. Spoon over the pan butter and finish with flaky salt.",
+          "min": 8
+        }
+      ],
+      "tip": "Hands off while it sears. Moving the steak breaks the crust."
+    },
+    {
+      "slug": "everything-bagel",
+      "pack": "familiar-favorites",
+      "blend": "Everything Bagel",
+      "street": [
+        "Everything",
+        "Bagel"
+      ],
+      "blendType": "Everything Bagel Seasoning",
+      "tagline": "Everything you've ever wanted",
+      "color": "#2a55c4",
+      "tin": "/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d2fb3bbbbd0fc321f3b551_46794_L_01.avif",
+      "photo": "/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/67858cf8b730a7ac79c8e29a_Everything_Seasoning_Bagels.png",
+      "notes": [
+        "Sesame",
+        "Garlic",
+        "Onion",
+        "Salt",
+        "Fennel"
+      ],
+      "title": "Two-Ingredient Everything Bagels",
+      "blurb": "Greek yogurt and self-rising flour. No yeast, no boil, no wait.",
+      "servings": 4,
+      "prep": 15,
+      "cook": 25,
+      "heat": 0,
+      "ingredients": [
+        {
+          "q": 1,
+          "u": "cup",
+          "i": "self-rising flour, plus more for dusting"
+        },
+        {
+          "q": 1,
+          "u": "cup",
+          "i": "full-fat plain Greek yogurt"
+        },
+        {
+          "q": 1,
+          "u": "",
+          "i": "egg, beaten (egg wash)"
+        },
+        {
+          "q": 2,
+          "u": "tbsp",
+          "i": "Everything Bagel blend",
+          "blend": true
+        },
+        {
+          "q": null,
+          "u": "",
+          "i": "cream cheese, for serving"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Heat the oven to 375°F (190°C) and line a sheet pan with parchment."
+        },
+        {
+          "t": "Stir the flour and yogurt into a shaggy dough. Knead on a floured counter for 2–3 minutes, until smooth and no longer sticky."
+        },
+        {
+          "t": "Cut into 4 pieces. Roll each into an 8-inch rope and pinch the ends together into a ring."
+        },
+        {
+          "t": "Brush with egg wash, then press the tops firmly into a plate of Everything Bagel blend."
+        },
+        {
+          "t": "Bake until deep golden. Let them cool for 10 minutes; they finish setting as they cool.",
+          "min": 25
+        }
+      ],
+      "tip": "Dip the egg-washed tops straight into the seasoning. Sprinkling leaves bald spots."
+    },
+    {
+      "slug": "garlic-parsley",
+      "pack": "familiar-favorites",
+      "blend": "Garlic Parsley",
+      "street": [
+        "Garlic",
+        "Parsley"
+      ],
+      "blendType": "Garlic & Parsley Blend",
+      "tagline": "When garlic met parsley",
+      "color": "#3f7d3a",
+      "tin": "/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e108f1bac4d1d59bf1_46789_L_01.webp",
+      "photo": "/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/67858c42c13103f742a020cd_Savory_Bagel_Blend_Cream_Cheese.png",
+      "notes": [
+        "Garlic",
+        "Parsley",
+        "Onion",
+        "Tomato",
+        "Chives"
+      ],
+      "title": "When Garlic Met Parsley: Whipped Herb Schmear",
+      "blurb": "Fluffy garlic-herb cream cheese for bagels, baked potatoes and late-night crackers.",
+      "servings": 6,
+      "prep": 10,
+      "cook": 0,
+      "heat": 0,
+      "ingredients": [
+        {
+          "q": 8,
+          "u": "oz",
+          "i": "cream cheese, softened"
+        },
+        {
+          "q": 2,
+          "u": "tbsp",
+          "i": "sour cream or Greek yogurt"
+        },
+        {
+          "q": 2,
+          "u": "tsp",
+          "i": "Garlic Parsley blend",
+          "blend": true
+        },
+        {
+          "q": 1,
+          "u": "tsp",
+          "i": "fresh lemon juice"
+        },
+        {
+          "q": 1,
+          "u": "tbsp",
+          "i": "fresh parsley, finely chopped"
+        },
+        {
+          "q": 4,
+          "u": "",
+          "i": "bagels, toasted"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Beat the cream cheese and sour cream with a hand mixer (or a fork and some effort) for about 2 minutes, until fluffy."
+        },
+        {
+          "t": "Fold in the Garlic Parsley blend, lemon juice and fresh parsley."
+        },
+        {
+          "t": "Chill so the dried garlic and herbs can soften and flavor the cream cheese.",
+          "min": 15
+        },
+        {
+          "t": "Swirl it into a bowl, add one more pinch of blend, and spread it thick on toasted bagels."
+        }
+      ],
+      "tip": "Stir a spoonful into hot pasta with a splash of pasta water for an instant creamy garlic sauce."
+    },
+    {
+      "slug": "chipotle-salsa",
+      "pack": "neighborhood-cookout",
+      "blend": "Chipotle Salsa",
+      "street": [
+        "Chipotle",
+        "Salsa"
+      ],
+      "blendType": "Chipotle Seasoning",
+      "tagline": "Cha-cha-cha chipotle",
+      "color": "#8c2a3c",
+      "tin": "/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e32b224112babfa6ba_46783_L_01.webp",
+      "photo": "/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/67858cc030a63e3bb6f0775e_Chipotle_Seasoning_Black_Beans.png",
+      "notes": [
+        "Chipotle",
+        "Tomato",
+        "Cilantro",
+        "Oregano",
+        "Orange peel",
+        "Smoked paprika"
+      ],
+      "title": "Cha-Cha-Chipotle Black Beans",
+      "blurb": "Smoky, saucy beans that steal the plate from whatever they're next to.",
+      "servings": 4,
+      "prep": 5,
+      "cook": 20,
+      "heat": 2,
+      "ingredients": [
+        {
+          "q": 2,
+          "u": "cans (15 oz)",
+          "i": "black beans, one drained and one with its liquid"
+        },
+        {
+          "q": 1,
+          "u": "tbsp",
+          "i": "olive oil"
+        },
+        {
+          "q": 0.5,
+          "u": "",
+          "i": "white onion, diced"
+        },
+        {
+          "q": 2,
+          "u": "cloves",
+          "i": "garlic, minced"
+        },
+        {
+          "q": 1,
+          "u": "",
+          "i": "Roma tomato, diced"
+        },
+        {
+          "q": 1,
+          "u": "tbsp",
+          "i": "Chipotle Salsa blend",
+          "blend": true
+        },
+        {
+          "q": 0.5,
+          "u": "cup",
+          "i": "water or stock"
+        },
+        {
+          "q": 1,
+          "u": "",
+          "i": "lime"
+        },
+        {
+          "q": 0.25,
+          "u": "cup",
+          "i": "cilantro, chopped"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Warm the oil in a saucepan over medium heat and cook the onion until soft.",
+          "min": 4
+        },
+        {
+          "t": "Add the garlic, tomato and Chipotle Salsa blend. Stir for a minute, until it smells amazing."
+        },
+        {
+          "t": "Pour in both cans of beans and the water. Simmer, mashing a few beans against the side to thicken it up.",
+          "min": 15
+        },
+        {
+          "t": "Squeeze in the lime and top with cilantro. Serve with rice, in burritos, or straight from the pot with chips."
+        }
+      ],
+      "tip": "Mash about a quarter of the beans. That's what makes them creamy without any cream."
+    },
+    {
+      "slug": "smokey-savory",
+      "pack": "neighborhood-cookout",
+      "blend": "Smokey Savory",
+      "street": [
+        "Smokey",
+        "Savory"
+      ],
+      "blendType": "Smokehouse Blend",
+      "tagline": "Where there's smoke there's flavor",
+      "color": "#e0662a",
+      "tin": "/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d2fb3bbbbd0fc321f3b5a6_47623_L_01.avif",
+      "photo": "/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/6785891d333de4224552ea06_Hot_Chili_Seasoning_Soup.png",
+      "notes": [
+        "Garlic",
+        "Paprika",
+        "Brown sugar",
+        "Oregano",
+        "Mustard",
+        "Pineapple"
+      ],
+      "title": "Where There's Smoke: Smokehouse Beef Chili",
+      "blurb": "One pot, one hour, and a smoky chili that tastes like it simmered all day.",
+      "servings": 6,
+      "prep": 15,
+      "cook": 60,
+      "heat": 2,
+      "ingredients": [
+        {
+          "q": 1,
+          "u": "tbsp",
+          "i": "neutral oil"
+        },
+        {
+          "q": 1.5,
+          "u": "lb",
+          "i": "ground beef (80/20)"
+        },
+        {
+          "q": 1,
+          "u": "",
+          "i": "yellow onion, diced"
+        },
+        {
+          "q": 1,
+          "u": "",
+          "i": "red bell pepper, diced"
+        },
+        {
+          "q": 4,
+          "u": "cloves",
+          "i": "garlic, minced"
+        },
+        {
+          "q": 3,
+          "u": "tbsp",
+          "i": "Smokey Savory blend",
+          "blend": true
+        },
+        {
+          "q": 2,
+          "u": "tbsp",
+          "i": "tomato paste"
+        },
+        {
+          "q": 1,
+          "u": "can (28 oz)",
+          "i": "crushed tomatoes"
+        },
+        {
+          "q": 1,
+          "u": "can (15 oz)",
+          "i": "kidney beans, drained"
+        },
+        {
+          "q": 1,
+          "u": "cup",
+          "i": "beef broth"
+        },
+        {
+          "q": 1,
+          "u": "tbsp",
+          "i": "apple cider vinegar"
+        },
+        {
+          "q": null,
+          "u": "",
+          "i": "cheddar, sour cream and scallions, for topping"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Heat the oil in a Dutch oven over medium-high. Brown the beef, breaking it up as it cooks.",
+          "min": 8
+        },
+        {
+          "t": "Add the onion and bell pepper and cook until they soften.",
+          "min": 5
+        },
+        {
+          "t": "Stir in the garlic, Smokey Savory and tomato paste. Cook for 2 minutes to toast the spices."
+        },
+        {
+          "t": "Add the tomatoes, beans and broth. Simmer low and partly covered, stirring now and then.",
+          "min": 45
+        },
+        {
+          "t": "Stir in the vinegar, taste and adjust. Load up the bowls with toppings."
+        }
+      ],
+      "tip": "Toast the blend in the fat before the liquid goes in. That's what brings out the smoke."
+    },
+    {
+      "slug": "beer-can-chicken",
+      "pack": "neighborhood-cookout",
+      "blend": "Beer Can Chicken",
+      "street": [
+        "Beer Can",
+        "Chicken"
+      ],
+      "blendType": "Beer Can Chicken Blend",
+      "tagline": "Crack open a cold one",
+      "color": "#23969c",
+      "tin": "/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9dc769feacc57bf03df_46797_L_01.webp",
+      "photo": null,
+      "notes": [
+        "Paprika",
+        "Roasted garlic",
+        "Mustard",
+        "Chili",
+        "Brown sugar",
+        "Lemon peel"
+      ],
+      "title": "Crack Open A Cold One: Beer Can Chicken",
+      "blurb": "The backyard legend. Juicy inside, lacquered outside, guaranteed conversation piece.",
+      "servings": 4,
+      "prep": 15,
+      "cook": 80,
+      "heat": 1,
+      "ingredients": [
+        {
+          "q": 1,
+          "u": "",
+          "i": "whole chicken (about 4 lb)"
+        },
+        {
+          "q": 3,
+          "u": "tbsp",
+          "i": "Beer Can Chicken blend",
+          "blend": true
+        },
+        {
+          "q": 2,
+          "u": "tbsp",
+          "i": "olive oil"
+        },
+        {
+          "q": 1,
+          "u": "can (12 oz)",
+          "i": "lager"
+        },
+        {
+          "q": 1,
+          "u": "",
+          "i": "lemon, cut in wedges (optional)"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Set up the grill for indirect medium heat (about 375°F / 190°C), or heat the oven to 375°F."
+        },
+        {
+          "t": "Pat the chicken very dry. Rub it with oil, then most of the blend, all over and inside the cavity."
+        },
+        {
+          "t": "Pour off half the beer and drop the last ½ tbsp of blend into the can."
+        },
+        {
+          "t": "Lower the chicken onto the can so it stands upright, legs forming a tripod. Set it on the grill or a sheet pan."
+        },
+        {
+          "t": "Cook until the thigh reads 175°F (80°C).",
+          "min": 80
+        },
+        {
+          "t": "Carefully lift it off the can (it's very hot). Rest, then carve.",
+          "min": 10
+        }
+      ],
+      "tip": "No grill? A sheet pan in the oven works. Just keep the can upright."
+    },
+    {
+      "slug": "roasted-veggies",
+      "pack": "neighborhood-cookout",
+      "blend": "Roasted Veggies",
+      "street": [
+        "Roasted",
+        "Veggies"
+      ],
+      "blendType": "Roasted Vegetable Blend",
+      "tagline": "The roast with the most",
+      "color": "#6a3d8f",
+      "tin": "/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9dcdd4b17d13b07da62_47620_L_01.webp",
+      "photo": "/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/67858834802ff1d2c5e92316_Garlic_and_Parsley_Blend_Roasted_Vegetables.png",
+      "notes": [
+        "Brown sugar",
+        "Carrot",
+        "Marjoram",
+        "Thyme",
+        "Rosemary",
+        "Bay leaf"
+      ],
+      "title": "The Roast With The Most: Sheet-Pan Veggies",
+      "blurb": "Caramelized edges, sweet-savory glaze and one pan to wash.",
+      "servings": 4,
+      "prep": 10,
+      "cook": 35,
+      "heat": 0,
+      "ingredients": [
+        {
+          "q": 1,
+          "u": "lb",
+          "i": "baby potatoes, halved"
+        },
+        {
+          "q": 3,
+          "u": "",
+          "i": "carrots, cut on the bias"
+        },
+        {
+          "q": 1,
+          "u": "",
+          "i": "red bell pepper, in chunks"
+        },
+        {
+          "q": 1,
+          "u": "",
+          "i": "red onion, in wedges"
+        },
+        {
+          "q": 1,
+          "u": "",
+          "i": "zucchini, in half-moons"
+        },
+        {
+          "q": 3,
+          "u": "tbsp",
+          "i": "olive oil"
+        },
+        {
+          "q": 1.5,
+          "u": "tbsp",
+          "i": "Roasted Veggies blend",
+          "blend": true
+        },
+        {
+          "q": 2,
+          "u": "tbsp",
+          "i": "fresh parsley, chopped"
+        },
+        {
+          "q": 1,
+          "u": "tsp",
+          "i": "balsamic vinegar (optional)"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Heat the oven to 425°F (220°C) with the sheet pan inside. A hot pan browns better."
+        },
+        {
+          "t": "Toss the potatoes and carrots with half the oil and half the blend. Spread them on the hot pan and roast.",
+          "min": 15
+        },
+        {
+          "t": "Toss the rest of the vegetables with the remaining oil and blend. Add them to the pan and keep roasting, flipping once.",
+          "min": 18
+        },
+        {
+          "t": "Finish with parsley and a splash of balsamic."
+        }
+      ],
+      "tip": "Give them room. Crowded veggies steam; spread-out veggies roast."
+    },
+    {
+      "slug": "provence-greens",
+      "pack": "around-the-world",
+      "blend": "Provence Greens",
+      "street": [
+        "Provence",
+        "Greens"
+      ],
+      "blendType": "Herbs de Provence",
+      "tagline": "I've herb that before",
+      "color": "#4d9a3f",
+      "tin": "/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9dc1524581c012da74f_47617_L_01.webp",
+      "photo": "/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/6785892bbcf87cd722aac7b0_Basil_Citrus_Blend_Dressing.png",
+      "notes": [
+        "Oregano",
+        "Basil",
+        "Marjoram",
+        "Thyme",
+        "Rosemary",
+        "Bay leaf"
+      ],
+      "title": "I've Herb That Before: Lemon Herb Vinaigrette",
+      "blurb": "Five minutes, one jar, and your salads finally have a personality.",
+      "servings": 6,
+      "prep": 5,
+      "cook": 0,
+      "heat": 0,
+      "ingredients": [
+        {
+          "q": 0.5,
+          "u": "cup",
+          "i": "extra-virgin olive oil"
+        },
+        {
+          "q": 3,
+          "u": "tbsp",
+          "i": "fresh lemon juice"
+        },
+        {
+          "q": 1,
+          "u": "tsp",
+          "i": "lemon zest"
+        },
+        {
+          "q": 1,
+          "u": "tsp",
+          "i": "Dijon mustard"
+        },
+        {
+          "q": 1,
+          "u": "tsp",
+          "i": "honey"
+        },
+        {
+          "q": 2,
+          "u": "tsp",
+          "i": "Provence Greens blend",
+          "blend": true
+        },
+        {
+          "q": 0.25,
+          "u": "tsp",
+          "i": "salt"
+        },
+        {
+          "q": 2,
+          "u": "tbsp",
+          "i": "fresh basil, chopped"
+        }
+      ],
+      "steps": [
+        {
+          "t": "In a jar, combine the lemon juice, zest, Dijon, honey, Provence Greens and salt. Let it sit so the dried herbs soften.",
+          "min": 5
+        },
+        {
+          "t": "Add the olive oil and basil, screw on the lid and shake hard for 20 seconds."
+        },
+        {
+          "t": "Taste it. Add more honey if it's sharp, more lemon if it's flat. It keeps a week in the fridge."
+        }
+      ],
+      "tip": "Spoon it over grilled chicken or fish too. Herbs de Provence and lemon taste like a trip to the south of France."
+    },
+    {
+      "slug": "adobo-seco",
+      "pack": "around-the-world",
+      "blend": "Adobo Seco",
+      "street": [
+        "Adobo",
+        "Seco"
+      ],
+      "blendType": "Caribbean Seasoning",
+      "tagline": "Tropic it like it's hot",
+      "color": "#ef7d1a",
+      "tin": "/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e883449644104529bc_46780_L_01.webp",
+      "photo": "/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/67858d06e3e723fb53ce1e6c_Adobo_Seco_Chicken.png",
+      "notes": [
+        "Garlic",
+        "Oregano",
+        "Turmeric",
+        "Cumin",
+        "Cilantro",
+        "Allspice"
+      ],
+      "title": "Tropic It Like It's Hot: Adobo Chicken & Rice",
+      "blurb": "Crispy-skinned chicken baked right on top of the rice it seasons.",
+      "servings": 4,
+      "prep": 10,
+      "cook": 45,
+      "heat": 1,
+      "ingredients": [
+        {
+          "q": 3,
+          "u": "lb",
+          "i": "bone-in, skin-on chicken drumsticks and thighs"
+        },
+        {
+          "q": 2.5,
+          "u": "tbsp",
+          "i": "Adobo Seco blend",
+          "blend": true
+        },
+        {
+          "q": 2,
+          "u": "tbsp",
+          "i": "olive oil"
+        },
+        {
+          "q": 2,
+          "u": "",
+          "i": "limes (juice of one, the other in wedges)"
+        },
+        {
+          "q": 4,
+          "u": "cloves",
+          "i": "garlic, grated"
+        },
+        {
+          "q": 1.5,
+          "u": "cups",
+          "i": "long-grain rice, rinsed"
+        },
+        {
+          "q": 2.25,
+          "u": "cups",
+          "i": "chicken broth"
+        },
+        {
+          "q": 0.25,
+          "u": "cup",
+          "i": "cilantro, chopped"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Toss the chicken with the oil, lime juice, garlic and 2 tbsp Adobo Seco. Marinate, or leave it overnight if you can.",
+          "min": 30
+        },
+        {
+          "t": "Heat the oven to 400°F (200°C). Spread the rice in a 9×13 dish and stir in the broth and the rest of the blend."
+        },
+        {
+          "t": "Nestle the chicken skin-side up on the rice. Cover tightly with foil and bake.",
+          "min": 25
+        },
+        {
+          "t": "Uncover and bake until the skin is crisp and the chicken reads 175°F (80°C).",
+          "min": 20
+        },
+        {
+          "t": "Rest for 5 minutes, then shower with cilantro and serve with lime wedges."
+        }
+      ],
+      "tip": "Marinate it the night before. Future you will be grateful."
+    },
+    {
+      "slug": "toscana-rustica",
+      "pack": "around-the-world",
+      "blend": "Toscana Rustica",
+      "street": [
+        "Toscana",
+        "Rustica"
+      ],
+      "blendType": "Tuscan Seasoning",
+      "tagline": "Got the sauce, got the flavor",
+      "color": "#7a2b4f",
+      "tin": "/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e53f3d164c3cf44510_46782_L_01.webp",
+      "photo": "/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/67858cd217e2cf03421fda98_Tuscan_Seasoning_Pasta.png",
+      "notes": [
+        "Tomato",
+        "Basil",
+        "Oregano",
+        "Fennel",
+        "Sage",
+        "Carrot"
+      ],
+      "title": "Got The Sauce: Toscana Farfalle",
+      "blurb": "Burst cherry tomatoes, garlic and spinach. Weeknight pasta in 20 minutes.",
+      "servings": 4,
+      "prep": 10,
+      "cook": 20,
+      "heat": 1,
+      "ingredients": [
+        {
+          "q": 12,
+          "u": "oz",
+          "i": "farfalle"
+        },
+        {
+          "q": 3,
+          "u": "tbsp",
+          "i": "olive oil"
+        },
+        {
+          "q": 3,
+          "u": "cloves",
+          "i": "garlic, thinly sliced"
+        },
+        {
+          "q": 1,
+          "u": "pint",
+          "i": "cherry tomatoes, halved"
+        },
+        {
+          "q": 1,
+          "u": "tbsp",
+          "i": "Toscana Rustica blend",
+          "blend": true
+        },
+        {
+          "q": 3,
+          "u": "cups",
+          "i": "baby spinach"
+        },
+        {
+          "q": 0.5,
+          "u": "cup",
+          "i": "grated parmesan"
+        },
+        {
+          "q": 0.5,
+          "u": "cup",
+          "i": "fresh basil leaves"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Boil the pasta in well-salted water until al dente. Scoop out ½ cup of pasta water before draining.",
+          "min": 11
+        },
+        {
+          "t": "While it cooks, warm the oil in a big skillet and cook the garlic until it's just golden at the edges."
+        },
+        {
+          "t": "Add the tomatoes and Toscana Rustica and cook until the tomatoes burst.",
+          "min": 6
+        },
+        {
+          "t": "Add the pasta, spinach and a splash of pasta water. Toss until glossy and the spinach wilts."
+        },
+        {
+          "t": "Off the heat, toss in the parmesan and torn basil."
+        }
+      ],
+      "tip": "Pasta water is free sauce. Always save a cup."
+    },
+    {
+      "slug": "greek-herb",
+      "pack": "around-the-world",
+      "blend": "Greek Herb",
+      "street": [
+        "Greek",
+        "Herb"
+      ],
+      "blendType": "Greek Table Blend",
+      "tagline": "Mediterranean goodness",
+      "color": "#2b5fbf",
+      "tin": "/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e5d0b3c627aa0ee63d_46781_L_01.webp",
+      "photo": "/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/67858ce4bfe33c09fa224895_Greek_Herb_Salad_Dressing.png",
+      "notes": [
+        "Garlic",
+        "Thyme",
+        "Marjoram",
+        "Oregano",
+        "Lemon peel",
+        "Mint"
+      ],
+      "title": "Mediterranean Goodness: Greek Herb Jar Salad",
+      "blurb": "Shake, chill, eat. A lunch that stays crisp until noon.",
+      "servings": 4,
+      "prep": 15,
+      "cook": 0,
+      "heat": 0,
+      "ingredients": [
+        {
+          "q": 0.33,
+          "u": "cup",
+          "i": "olive oil"
+        },
+        {
+          "q": 3,
+          "u": "tbsp",
+          "i": "red wine vinegar"
+        },
+        {
+          "q": 2,
+          "u": "tsp",
+          "i": "Greek Herb blend",
+          "blend": true
+        },
+        {
+          "q": 1,
+          "u": "tsp",
+          "i": "honey"
+        },
+        {
+          "q": 1,
+          "u": "",
+          "i": "English cucumber, diced"
+        },
+        {
+          "q": 1,
+          "u": "pint",
+          "i": "cherry tomatoes, halved"
+        },
+        {
+          "q": 0.25,
+          "u": "",
+          "i": "red onion, thinly sliced"
+        },
+        {
+          "q": 0.5,
+          "u": "cup",
+          "i": "kalamata olives"
+        },
+        {
+          "q": 4,
+          "u": "oz",
+          "i": "feta, cubed"
+        }
+      ],
+      "steps": [
+        {
+          "t": "In a large jar, shake the oil, vinegar, Greek Herb and honey until combined."
+        },
+        {
+          "t": "Layer in the onion first (it pickles in the dressing), then the cucumber, tomatoes, olives and feta."
+        },
+        {
+          "t": "Chill, then shake or toss right before eating.",
+          "min": 20
+        }
+      ],
+      "tip": "Keep the feta on top so it stays firm instead of soaking up the dressing."
+    },
+    {
+      "slug": "taqueria-truck",
+      "pack": "around-the-world",
+      "blend": "Taqueria Truck",
+      "street": [
+        "Taqueria",
+        "Truck"
+      ],
+      "blendType": "Taco Seasoning",
+      "tagline": "Taco about adding flavor",
+      "color": "#d8332a",
+      "tin": "/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e3aa6da1fc5f84c31e_46784_L_01.webp",
+      "photo": "/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/67858cb281e253c62c083946_Taco_Seasoning_Chicken_Tacos.png",
+      "notes": [
+        "Paprika",
+        "Chili",
+        "Garlic",
+        "Cumin",
+        "Brown sugar",
+        "Oregano"
+      ],
+      "title": "Taco About Flavor: Taqueria Chicken Tacos",
+      "blurb": "Charred, juicy chicken thighs that taste like the truck down the block.",
+      "servings": 4,
+      "prep": 10,
+      "cook": 15,
+      "heat": 2,
+      "ingredients": [
+        {
+          "q": 1.5,
+          "u": "lb",
+          "i": "boneless, skinless chicken thighs"
+        },
+        {
+          "q": 2,
+          "u": "tbsp",
+          "i": "Taqueria Truck blend",
+          "blend": true
+        },
+        {
+          "q": 2,
+          "u": "tbsp",
+          "i": "neutral oil"
+        },
+        {
+          "q": 1,
+          "u": "",
+          "i": "lime, juiced, plus wedges to serve"
+        },
+        {
+          "q": 12,
+          "u": "",
+          "i": "small corn or flour tortillas"
+        },
+        {
+          "q": 1,
+          "u": "cup",
+          "i": "pico de gallo"
+        },
+        {
+          "q": 0.5,
+          "u": "",
+          "i": "white onion, finely diced"
+        },
+        {
+          "q": 0.5,
+          "u": "cup",
+          "i": "cilantro, chopped"
+        }
+      ],
+      "steps": [
+        {
+          "t": "Toss the chicken with Taqueria Truck, 1 tbsp oil and the lime juice and let it marinate.",
+          "min": 15
+        },
+        {
+          "t": "Heat a cast-iron pan over medium-high with the rest of the oil. Cook the thighs until charred and 175°F (80°C) inside, flipping once.",
+          "min": 12
+        },
+        {
+          "t": "Rest, then chop into small pieces and toss them in the pan juices.",
+          "min": 5
+        },
+        {
+          "t": "Warm the tortillas over a gas flame or in a dry pan, about 30 seconds per side."
+        },
+        {
+          "t": "Load them up: chicken, pico, onion, cilantro and a squeeze of lime."
+        }
+      ],
+      "tip": "Use thighs, not breasts. They stay juicy even when you char them hard."
+    }
+  ],
+  "legacy": {
+    "garlic-parsley-blend-vegetables": "roasted-veggies",
+    "hot-chili-seasoning-soup": "smokey-savory",
+    "basil-citrus-blend-dressing": "provence-greens",
+    "savory-bagel-blend-cream-cheese": "garlic-parsley",
+    "taco-seasoning-chicken": "taqueria-truck",
+    "chipotle-seasoning-beans": "chipotle-salsa",
+    "tuscan-seasoning-pasta": "toscana-rustica",
+    "greek-herb-salad": "greek-herb",
+    "everything-seasoning-bagel": "everything-bagel",
+    "adobo-seco-recipe": "adobo-seco"
+  }
+}

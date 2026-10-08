@@ -10,3 +10,4 @@ dist/
 .env.*
 source/cdn/**/*.mp4
 source/cdn/**/*.webm
+.cache/

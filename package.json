@@ -8,6 +8,7 @@
     "scrape": "node scripts/scrape.mjs",
     "build": "node scripts/build.mjs",
     "compare": "node scripts/compare.mjs",
+    "measure": "node scripts/measure.mjs",
     "dev": "npx --yes serve dist -p 4174",
     "preview": "npm run build && wrangler dev",
     "deploy": "npm run build && wrangler deploy"
