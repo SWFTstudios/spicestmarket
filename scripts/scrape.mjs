@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Download published Spice St Market Webflow pages + original assets into source/
+ * Download published Spice St Market Webflow pages + assets into source/
  * Site: 665ec1cc5ff6a46b977004bc (spicest.webflow.io)
  */
 import { mkdir, writeFile, readFile, rm } from 'node:fs/promises';
@@ -18,6 +18,14 @@ const PAGES = [
   { path: '/recipes', file: 'recipes.html' },
   { path: '/gallery', file: 'gallery.html' },
   { path: '/shop', file: 'shop.html' },
+  { path: '/404', file: '404.html' },
+];
+
+/** Extra third-party URLs that appear without clear extensions */
+const EXTRA_URLS = [
+  'https://unpkg.com/split-type',
+  'https://cdn.finsweet.com/files/cmslibrary-v1.7.js',
+  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fitty.min.js',
 ];
 
 async function ensureDir(p) {
@@ -28,6 +36,7 @@ async function download(url, dest) {
   await ensureDir(dirname(dest));
   const res = await fetch(url, {
     headers: { 'User-Agent': 'spicestmarket-scrape/1.0' },
+    redirect: 'follow',
   });
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
   const buf = Buffer.from(await res.arrayBuffer());
@@ -35,25 +44,26 @@ async function download(url, dest) {
   return { url, dest, bytes: buf.length, contentType: res.headers.get('content-type') };
 }
 
-function isOriginalAsset(url) {
-  return !/-p-\d+\./.test(url);
-}
-
 function localPathFor(url) {
   const u = new URL(url);
-  if (
-    u.hostname.includes('website-files.com') ||
-    u.hostname.includes('cloudfront.net') ||
-    u.hostname.includes('googleapis.com') ||
-    u.hostname.includes('typekit.net') ||
-    u.hostname.includes('jsdelivr.net') ||
-    u.hostname.includes('cdnjs.cloudflare.com') ||
-    u.hostname.includes('unpkg.com')
-  ) {
-    const safe = u.pathname.replace(/^\//, '').replace(/%20/g, '_').replace(/%2520/g, '_');
-    return join(SOURCE, 'cdn', u.hostname, safe);
+  let pathPart = u.pathname.replace(/^\//, '');
+  if (!pathPart || pathPart.endsWith('/')) {
+    pathPart = (pathPart || '') + 'index';
   }
-  return join(SOURCE, 'cdn', u.hostname, basename(u.pathname) || 'index');
+  // unpkg bare package → split-type.js
+  if (u.hostname === 'unpkg.com' && pathPart === 'split-type') {
+    pathPart = 'split-type.js';
+  }
+  const safe = pathPart
+    .replace(/%20/g, '_')
+    .replace(/%2520/g, '_')
+    .replace(/ /g, '_')
+    .replace(/\?/g, '_')
+    .replace(/=/g, '-');
+  // Keep query-less filenames; append short query hash when needed for uniqueness
+  const q = u.searchParams.toString();
+  const suffix = q && !safe.includes('.') ? `_${Buffer.from(q).toString('base64url').slice(0, 12)}` : '';
+  return join(SOURCE, 'cdn', u.hostname, safe + suffix);
 }
 
 function extractUrls(html) {
@@ -82,14 +92,34 @@ function extractUrls(html) {
 function wantsUrl(u) {
   try {
     const parsed = new URL(u);
-    // Skip bare CDN host and plugin placeholders
     if (parsed.pathname === '/' || parsed.pathname === '') return false;
     if (parsed.pathname.includes('/plugins/')) return false;
+    // Skip large videos — keep remote if referenced
+    if (/\.(mp4|webm|mov)(\?|$)/i.test(parsed.pathname)) return false;
+
+    const host = parsed.hostname;
+    const isAssetHost =
+      host.includes('website-files.com') ||
+      host.includes('cloudfront.net') ||
+      host.includes('jsdelivr.net') ||
+      host.includes('cdnjs.cloudflare.com') ||
+      host.includes('unpkg.com') ||
+      host.includes('finsweet.com') ||
+      host.includes('amazonaws.com') ||
+      host === 'ajax.googleapis.com';
+
+    if (!isAssetHost) return false;
+
+    // Typekit kit loader stays remote (licensed)
+    if (host.includes('typekit.net')) return false;
+
     return (
-      /\.(css|js|woff2?|ttf|otf|svg|png|jpe?g|webp|avif|gif|ico|JPG|mp4|webm)(\?|$)/i.test(parsed.pathname) ||
+      /\.(css|js|woff2?|ttf|otf|svg|png|jpe?g|webp|avif|gif|ico|JPG)(\?|$)/i.test(parsed.pathname) ||
       parsed.pathname.includes('/css/') ||
       parsed.pathname.includes('/js/') ||
-      (parsed.hostname.includes('website-files.com') && parsed.pathname.includes(SITE_ID))
+      parsed.pathname === '/split-type' ||
+      (host.includes('website-files.com') &&
+        (parsed.pathname.includes(SITE_ID) || parsed.pathname.includes('67210621867751a15a07d46e')))
     );
   } catch {
     return false;
@@ -98,7 +128,6 @@ function wantsUrl(u) {
 
 async function main() {
   console.log('Scraping', SITE, `(site ${SITE_ID})`);
-  // Fresh scrape — drop previous (wrong) site assets
   await rm(SOURCE, { recursive: true, force: true });
   await ensureDir(SOURCE);
   const results = [];
@@ -116,10 +145,7 @@ async function main() {
     await Promise.all(PAGES.map((p) => readFile(join(SOURCE, p.file), 'utf8')))
   ).join('\n');
 
-  const urls = extractUrls(htmlBlob).filter(wantsUrl).filter((u) => {
-    if (/\.(png|jpe?g|webp|avif|gif|JPG)$/i.test(u)) return isOriginalAsset(u);
-    return true;
-  });
+  const urls = [...new Set([...extractUrls(htmlBlob), ...EXTRA_URLS])].filter(wantsUrl);
 
   for (const url of urls) {
     if (seen.has(url)) continue;
@@ -134,13 +160,29 @@ async function main() {
     }
   }
 
+  // Pull CSS-referenced assets (fonts, bg images)
   const cssEntries = results.filter((r) => r.dest.endsWith('.css'));
   for (const css of cssEntries) {
     const cssText = await readFile(css.dest, 'utf8');
-    const cssUrls = [...cssText.matchAll(/url\(["']?(https?:\/\/[^"')]+)["']?\)/gi)].map((m) => m[1]);
+    const cssUrls = [
+      ...cssText.matchAll(/url\(["']?(https?:\/\/[^"')]+)["']?\)/gi),
+    ].map((m) => m[1]);
+    // Also relative urls under website-files
+    const relUrls = [...cssText.matchAll(/url\(["']?([^"')]+)["']?\)/gi)]
+      .map((m) => m[1])
+      .filter((u) => u && !u.startsWith('data:') && !u.startsWith('http'));
+    for (const rel of relUrls) {
+      try {
+        const abs = new URL(rel, 'https://cdn.prod.website-files.com/').href;
+        if (wantsUrl(abs) && !seen.has(abs)) {
+          cssUrls.push(abs);
+        }
+      } catch {
+        /* ignore */
+      }
+    }
     for (const url of cssUrls) {
       if (!wantsUrl(url) || seen.has(url)) continue;
-      if (/\.(png|jpe?g|webp|avif|gif|JPG)$/i.test(url) && !isOriginalAsset(url)) continue;
       seen.add(url);
       try {
         const r = await download(url, localPathFor(url));

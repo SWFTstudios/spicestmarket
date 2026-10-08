@@ -1,0 +1,57 @@
+/* Thin enhancements — do not override Webflow layout */
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.45s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::view-transition-old(root) {
+  animation-name: spice-wipe-out;
+}
+
+::view-transition-new(root) {
+  animation-name: spice-wipe-in;
+}
+
+@keyframes spice-wipe-out {
+  to {
+    opacity: 0;
+    filter: saturate(1.2) brightness(0.85);
+  }
+}
+
+@keyframes spice-wipe-in {
+  from {
+    opacity: 0;
+    filter: saturate(1.3) brightness(1.05);
+  }
+  to {
+    opacity: 1;
+    filter: none;
+  }
+}
+
+html.spice-vt::view-transition-group(root) {
+  animation-duration: 0.45s;
+}
+
+/* Soft spice-red flash during transition */
+html[data-spice-nav='out']::view-transition-old(root) {
+  outline: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
+  }
+}
