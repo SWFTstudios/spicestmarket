@@ -403,8 +403,8 @@ async function writeRecipes(recipesShell, data, navMenu) {
 async function writeEdgeConfig(data) {
   const redirects = [
     ...Object.entries(data.legacy).map(([from, to]) => `/recipe/${from} /recipes/${to}/ 301`),
-    '/recipe/* /recipes/ 301',
     '/recipe /recipes/ 301',
+    '/recipe/* /recipes/ 301',
   ];
   await writeFile(join(DIST, '_redirects'), redirects.join('\n') + '\n');
   await writeFile(
