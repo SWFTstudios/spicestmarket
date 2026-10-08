@@ -17,6 +17,9 @@ import { dirname, join, relative, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 import * as esbuild from 'esbuild';
+import { createHash } from 'node:crypto';
+import { createImagePipeline } from './lib/images.mjs';
+import { renderNavMenu, renderIndexContent, renderRecipeContent, recipeMeta, esc, SITE } from './lib/recipes.mjs';
 
 const require = createRequire(import.meta.url);
 const { transform } = require('lightningcss');
@@ -99,6 +102,9 @@ function urlToLocal(url, fileIndex) {
       return '/cdn/' + key.split(/[/\\]/).join('/');
     }
   }
+
+  // Videos are .gitignored (too big for the repo) — keep them on Webflow's CDN
+  if (/\.(mp4|webm|mov)$/i.test(u.pathname)) return null;
 
   // Fall back: scrape layout uses underscores for spaces
   const fallback = pathPart.replace(/%20/g, '_').replace(/%2520/g, '_');
@@ -187,19 +193,20 @@ function rewriteHtml(html, fileIndex) {
     ''
   );
 
-  // Inject enhance CSS in head + enhance JS before </body>
-  if (!html.includes('/css/enhance.css')) {
-    html = html.replace(
-      /<\/head>/i,
-      '  <link rel="stylesheet" href="/css/enhance.css" />\n</head>'
-    );
-  }
-  if (!html.includes('/js/enhance.js')) {
-    html = html.replace(
-      /<\/body>/i,
-      '  <script src="/js/enhance.js" defer></script>\n</body>'
-    );
-  }
+  // Prefetching amazon.com / instagram.com on every page view only burns bandwidth
+  html = html.replace(/<link rel="prefetch" href="https?:\/\/(?:www\.)?(?:amazon|instagram)\.com[^"]*"\/?>/gi, '');
+  // Swiper 7 loads right after Swiper 8 and is overwritten by Swiper 10 before any
+  // `new Swiper()` runs, so it never initializes anything (~130 KB of dead JS)
+  html = html.replace(/<script src="[^"]*swiper@7\/swiper-bundle\.min\.js"><\/script>/gi, '');
+  // Assets are self-hosted now; the Webflow CDN preconnect is dead weight
+  html = html.replace(/<link href="https:\/\/cdn\.prod\.website-files\.com" rel="preconnect"[^>]*>/i, '');
+
+  // Inject enhance CSS + speculation rules in head, enhance JS before </body>
+  html = html.replace(
+    /<\/head>/i,
+    `  <link rel="stylesheet" href="${ENHANCE.css}" />\n${SPECULATION}\n</head>`
+  );
+  html = html.replace(/<\/body>/i, `  <script src="${ENHANCE.js}" defer></script>\n</body>`);
 
   return html;
 }
@@ -226,6 +233,8 @@ function rewriteCss(css, fileIndex, cssFileUrl) {
   });
 }
 
+let IMAGES;
+
 async function copyCdnTree(fileIndex) {
   const outRoot = join(DIST, 'cdn');
   await ensureDir(outRoot);
@@ -249,6 +258,7 @@ async function copyCdnTree(fileIndex) {
         const pathAfter = rel.slice(host.length);
         const cssFileUrl = `https://${host}${pathAfter}`;
         css = rewriteCss(css, fileIndex, cssFileUrl);
+        css = await IMAGES.rewriteCss(css);
         try {
           const { code } = transform({
             filename: e.name,
@@ -265,26 +275,44 @@ async function copyCdnTree(fileIndex) {
   await walkCss(outRoot);
 }
 
-async function buildEnhance() {
-  await ensureDir(join(DIST, 'js'));
-  await ensureDir(join(DIST, 'css'));
+/** Hashed so /assets/* can be cached for a year. */
+const ENHANCE = { js: '', css: '' };
+const SPECULATION = `<script type="speculationrules">${JSON.stringify({
+  prefetch: [
+    {
+      source: 'document',
+      where: { and: [{ href_matches: '/*' }, { not: { href_matches: ['/cdn/*', '/img/*', '/assets/*'] } }] },
+      eagerness: 'moderate',
+    },
+  ],
+})}</script>`;
 
-  await esbuild.build({
+const contentHash = (buf) => createHash('sha1').update(buf).digest('hex').slice(0, 10);
+
+async function buildEnhance() {
+  await ensureDir(join(DIST, 'assets'));
+
+  const js = await esbuild.build({
     entryPoints: [join(SRC, 'js/enhance.js')],
     bundle: true,
     minify: true,
     format: 'iife',
-    outfile: join(DIST, 'js/enhance.js'),
+    write: false,
     target: ['es2020'],
   });
+  const jsCode = js.outputFiles[0].contents;
+  ENHANCE.js = `/assets/enhance.${contentHash(jsCode)}.js`;
+  await writeFile(join(DIST, ENHANCE.js), jsCode);
 
-  const cssIn = await readFile(join(SRC, 'styles/enhance.css'));
+  const cssIn = await IMAGES.rewriteCss(await readFile(join(SRC, 'styles/enhance.css'), 'utf8'));
   const { code } = transform({
     filename: 'enhance.css',
-    code: cssIn,
+    code: Buffer.from(cssIn),
     minify: true,
   });
-  await writeFile(join(DIST, 'css/enhance.css'), code);
+  ENHANCE.css = `/assets/enhance.${contentHash(code)}.css`;
+  await writeFile(join(DIST, ENHANCE.css), code);
+  return { js: jsCode.length, css: code.length };
 }
 
 async function writeContactRedirect() {
@@ -305,20 +333,112 @@ async function writeContactRedirect() {
   await writeFile(join(DIST, 'contact/index.html'), html);
 }
 
+const NAV_RECIPES_LINK = /<a href="\/recipes"[^>]*class="nav-link-small hide w-nav-link[^"]*"[^>]*>[^<]*<\/a>/i;
+const RECIPE_SECTION = /<section class="bbb-section-1[\s\S]*?<\/section>/i;
+
+/** Per-page polish applied after URL localization. */
+async function finishPage(html, { page, navMenu, active }) {
+  html = html.replace(NAV_RECIPES_LINK, active === 'recipes' ? navMenu.replace('ssm-nav-recipes__link"', 'ssm-nav-recipes__link w--current" aria-current="page"') : navMenu);
+  html = await IMAGES.rewriteCss(html); // inline style="background-image:url(/cdn/…)" + <style> blocks
+  html = await IMAGES.rewriteHtml(html, { page });
+  return html;
+}
+
+function setHead(html, { title, description, path, image }) {
+  const url = SITE + path;
+  html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${esc(title)}</title>`);
+  html = html.replace(/<meta content="[^"]*" name="description"\/?>/i, '');
+  html = html.replace(/<meta content="[^"]*" property="og:(title|description|image|url)"\/?>/gi, '');
+  html = html.replace(/<meta content="[^"]*" property="twitter:(title|description|image)"\/?>/gi, '');
+  const tags = [
+    `<meta name="description" content="${esc(description)}"/>`,
+    `<meta property="og:title" content="${esc(title)}"/>`,
+    `<meta property="og:description" content="${esc(description)}"/>`,
+    `<meta property="og:url" content="${url}"/>`,
+    image ? `<meta property="og:image" content="${SITE}${image}"/>` : '',
+    `<link rel="canonical" href="${url}"/>`,
+  ].join('');
+  return html.replace(/<meta charset="utf-8"\/>/i, (m) => m + tags);
+}
+
+async function writeRecipes(recipesShell, data, navMenu) {
+  const [before, after] = (() => {
+    const m = recipesShell.match(RECIPE_SECTION);
+    if (!m) throw new Error('recipes.html: could not find the recipe section to replace');
+    return [recipesShell.slice(0, m.index), recipesShell.slice(m.index + m[0].length)];
+  })();
+  const sectionOpen = recipesShell
+    .match(RECIPE_SECTION)[0]
+    .split('<div class="padding-small">')[0]
+    .replace(/ data-w-id="[^"]*" style="opacity:0"/, '');
+
+  // Index
+  const index = `${sectionOpen}<div class="padding-small">${await renderIndexContent(data, IMAGES.img)}</div></div></div></div></div></section>`;
+  let html = setHead(before + index + after, {
+    title: 'Recipes | Spice St. Market',
+    description: data.lede,
+    path: '/recipes/',
+  });
+  html = await finishPage(html, { page: 'recipes', navMenu, active: 'recipes' });
+  await ensureDir(join(DIST, 'recipes'));
+  await writeFile(join(DIST, 'recipes/index.html'), html);
+  console.log('  ✓ recipes/index.html');
+
+  // One page per blend
+  for (const r of data.recipes) {
+    const { html: body, heroSrc } = await renderRecipeContent(r, data, IMAGES.img);
+    const meta = recipeMeta(r);
+    let page = setHead(before + `<section class="ssm-recipe-section">${body}</section>` + after, {
+      ...meta,
+      path: `/recipes/${r.slug}/`,
+      image: heroSrc,
+    });
+    page = await finishPage(page, { page: `recipes/${r.slug}`, navMenu, active: 'recipes' });
+    await ensureDir(join(DIST, 'recipes', r.slug));
+    await writeFile(join(DIST, 'recipes', r.slug, 'index.html'), page);
+  }
+  console.log(`  ✓ recipes/<blend>/ × ${data.recipes.length}`);
+}
+
+async function writeEdgeConfig(data) {
+  const redirects = [
+    ...Object.entries(data.legacy).map(([from, to]) => `/recipe/${from} /recipes/${to}/ 301`),
+    '/recipe /recipes/ 301',
+    '/recipe/* /recipes/ 301',
+  ];
+  await writeFile(join(DIST, '_redirects'), redirects.join('\n') + '\n');
+  await writeFile(
+    join(DIST, '_headers'),
+    `/img/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/cdn/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+`
+  );
+}
+
 async function main() {
   console.log('Building faithful Webflow port → dist/');
   // Wipe dist but keep nothing — fresh
   await rm(DIST, { recursive: true, force: true });
   await ensureDir(DIST);
 
+  const sizesData = JSON.parse(await readFile(join(SRC, 'data/image-sizes.json'), 'utf8').catch(() => '{}'));
+  IMAGES = createImagePipeline({ root: ROOT, cdnSrc: CDN_SRC, dist: DIST, sizesData });
+  const recipes = JSON.parse(await readFile(join(SRC, 'data/recipes.json'), 'utf8'));
+
   const fileIndex = await buildFileIndex();
   console.log(`  Indexed ${fileIndex.size / 2 | 0} CDN files`);
 
   await copyCdnTree(fileIndex);
-  console.log('  Copied /cdn assets');
+  console.log('  Copied /cdn assets (CSS backgrounds → optimized WebP)');
 
-  await buildEnhance();
-  console.log('  Built enhance.js + enhance.css');
+  const enhanceBytes = await buildEnhance();
+  console.log(`  Built ${ENHANCE.js} (${(enhanceBytes.js / 1024).toFixed(1)} KB) + ${ENHANCE.css} (${(enhanceBytes.css / 1024).toFixed(1)} KB)`);
+
+  const navMenu = await renderNavMenu(recipes, IMAGES.img);
 
   for (const page of PAGES) {
     const srcPath = join(SOURCE, page.file);
@@ -328,6 +448,11 @@ async function main() {
     }
     let html = await readFile(srcPath, 'utf8');
     html = rewriteHtml(html, fileIndex);
+    if (page.file === 'recipes.html') {
+      await writeRecipes(html, recipes, navMenu);
+      continue;
+    }
+    html = await finishPage(html, { page: page.file.replace('.html', ''), navMenu });
     const out = join(DIST, page.out);
     await ensureDir(dirname(out));
     await writeFile(out, html);
@@ -337,6 +462,13 @@ async function main() {
   await writeContactRedirect();
   console.log('  ✓ contact/index.html → /#footer');
 
+  await writeEdgeConfig(recipes);
+  console.log('  ✓ _redirects + _headers');
+
+  const st = IMAGES.stats;
+  console.log(
+    `  Images: ${st.sources} originals (${(st.inBytes / 1048576).toFixed(1)} MB) → ${st.variants} WebP variants (${(st.outBytes / 1048576).toFixed(1)} MB across all sizes)`
+  );
   console.log('\nDone.');
 }
 

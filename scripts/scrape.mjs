@@ -26,6 +26,11 @@ const EXTRA_URLS = [
   'https://unpkg.com/split-type',
   'https://cdn.finsweet.com/files/cmslibrary-v1.7.js',
   'https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fitty.min.js',
+  // The AdobeStock slide originals use AVIF features sharp/libheif can't decode;
+  // the build serves Webflow's own renditions of them instead (see scripts/lib/images.mjs)
+  ...['6840a8c3034f7c5148f5ce8c_AdobeStock_204891345', '6840a8c311a14b1864c6cd6b_AdobeStock_214498764', '6840a8c2dfdb8f7005fab927_AdobeStock_308032794'].flatMap(
+    (stem) => [500, 800, 1080, 1600].map((w) => `https://cdn.prod.website-files.com/${SITE_ID}/${stem}-p-${w}.avif`)
+  ),
 ];
 
 async function ensureDir(p) {
