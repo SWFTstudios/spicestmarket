@@ -1,0 +1,25 @@
+{
+  "name": "spicestmarket",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Optimized static rebuild of Spice St Market with brand motion (Cloudflare Workers)",
+  "scripts": {
+    "scrape": "node scripts/scrape.mjs",
+    "build": "node scripts/build.mjs",
+    "fonts": "node scripts/fonts.mjs",
+    "dev": "npx --yes serve dist -p 4174",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "lenis": "^1.3.11"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "lightningcss": "^1.29.0",
+    "sharp": "^0.33.5",
+    "wrangler": "^4.148.0"
+  }
+}

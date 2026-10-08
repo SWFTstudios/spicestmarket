@@ -1,0 +1,832 @@
+{
+  "scrapedAt": "2026-10-08T14:29:19.965Z",
+  "siteId": "665ec1cc5ff6a46b977004bc",
+  "siteUrl": "https://spicest.webflow.io",
+  "fileCount": 137,
+  "totalBytes": 112617880,
+  "totalMB": 107.4,
+  "files": [
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc%2F675b437d7c4dc16de579ee48_spice_st_video_placeholder%20%28720p%29-transcode.webm",
+      "bytes": 20602724,
+      "kb": 20119.8,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc%2F675b437d7c4dc16de579ee48_spice_st_video_placeholder_%28720p%29-transcode.webm"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc%2F675b437d7c4dc16de579ee48_spice_st_video_placeholder%20%28720p%29-transcode.mp4",
+      "bytes": 14003216,
+      "kb": 13675,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc%2F675b437d7c4dc16de579ee48_spice_st_video_placeholder_%28720p%29-transcode.mp4"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc%2F680641e79d9b82b39590b666_spice_st_market_taco_voice_fix%20%28720p%29-transcode.webm",
+      "bytes": 8648461,
+      "kb": 8445.8,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc%2F680641e79d9b82b39590b666_spice_st_market_taco_voice_fix_%28720p%29-transcode.webm"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc%2F680641e79d9b82b39590b666_spice_st_market_taco_voice_fix%20%28720p%29-transcode.mp4",
+      "bytes": 4768072,
+      "kb": 4656.3,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc%2F680641e79d9b82b39590b666_spice_st_market_taco_voice_fix_%28720p%29-transcode.mp4"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6824dbdc4c596521eda0cab6_spice-st-about-us-bg-image.webp",
+      "bytes": 3912346,
+      "kb": 3820.7,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6824dbdc4c596521eda0cab6_spice-st-about-us-bg-image.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f939c4d7f6148a180f0b_Spice%20St.%20Market_GroupLineUp.JPG",
+      "bytes": 2686515,
+      "kb": 2623.5,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f939c4d7f6148a180f0b_Spice_St._Market_GroupLineUp.JPG"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d2f9bae2c1f012501ee649_cherry-wood-spicest.webp",
+      "bytes": 2496670,
+      "kb": 2438.2,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d2f9bae2c1f012501ee649_cherry-wood-spicest.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d329c9058b637f4fcf48ac_SpiceSt.Group_07.webp",
+      "bytes": 2308034,
+      "kb": 2253.9,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d329c9058b637f4fcf48ac_SpiceSt.Group_07.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d329c90aa85c11705a4d77_SpiceSt.Group_04.webp",
+      "bytes": 2220362,
+      "kb": 2168.3,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d329c90aa85c11705a4d77_SpiceSt.Group_04.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d329c9f450ad383aba7392_SpiceSt.Group_05.webp",
+      "bytes": 2078282,
+      "kb": 2029.6,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d329c9f450ad383aba7392_SpiceSt.Group_05.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67210621867751a15a07d46e/67858d06e3e723fb53ce1e6c_Adobo_Seco_Chicken.png",
+      "bytes": 1955611,
+      "kb": 1909.8,
+      "path": "source/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/67858d06e3e723fb53ce1e6c_Adobo_Seco_Chicken.png"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d329c9ce08b77ffbb2a1d2_SpiceSt.Group_01.webp",
+      "bytes": 1934818,
+      "kb": 1889.5,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d329c9ce08b77ffbb2a1d2_SpiceSt.Group_01.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67210621867751a15a07d46e/67858834802ff1d2c5e92316_Garlic_and_Parsley_Blend_Roasted_Vegetables.png",
+      "bytes": 1777215,
+      "kb": 1735.6,
+      "path": "source/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/67858834802ff1d2c5e92316_Garlic_and_Parsley_Blend_Roasted_Vegetables.png"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67210621867751a15a07d46e/67858cb281e253c62c083946_Taco_Seasoning_Chicken_Tacos.png",
+      "bytes": 1657469,
+      "kb": 1618.6,
+      "path": "source/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/67858cb281e253c62c083946_Taco_Seasoning_Chicken_Tacos.png"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67210621867751a15a07d46e/67858cc030a63e3bb6f0775e_Chipotle_Seasoning_Black_Beans.png",
+      "bytes": 1575214,
+      "kb": 1538.3,
+      "path": "source/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/67858cc030a63e3bb6f0775e_Chipotle_Seasoning_Black_Beans.png"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67210621867751a15a07d46e/67858cd217e2cf03421fda98_Tuscan_Seasoning_Pasta.png",
+      "bytes": 1560108,
+      "kb": 1523.5,
+      "path": "source/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/67858cd217e2cf03421fda98_Tuscan_Seasoning_Pasta.png"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67210621867751a15a07d46e/67858c42c13103f742a020cd_Savory_Bagel_Blend_Cream_Cheese.png",
+      "bytes": 1546255,
+      "kb": 1510,
+      "path": "source/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/67858c42c13103f742a020cd_Savory_Bagel_Blend_Cream_Cheese.png"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67210621867751a15a07d46e/67858cf8b730a7ac79c8e29a_Everything_Seasoning_Bagels.png",
+      "bytes": 1545278,
+      "kb": 1509.1,
+      "path": "source/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/67858cf8b730a7ac79c8e29a_Everything_Seasoning_Bagels.png"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e1e7a62f40717d1452_46790_L_01.webp",
+      "bytes": 1508466,
+      "kb": 1473.1,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e1e7a62f40717d1452_46790_L_01.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67210621867751a15a07d46e/67858ce4bfe33c09fa224895_Greek_Herb_Salad_Dressing.png",
+      "bytes": 1459711,
+      "kb": 1425.5,
+      "path": "source/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/67858ce4bfe33c09fa224895_Greek_Herb_Salad_Dressing.png"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67210621867751a15a07d46e/6785891d333de4224552ea06_Hot_Chili_Seasoning_Soup.png",
+      "bytes": 1448573,
+      "kb": 1414.6,
+      "path": "source/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/6785891d333de4224552ea06_Hot_Chili_Seasoning_Soup.png"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d329c88e447d42c4617b65_SpiceSt.Group_02.avif",
+      "bytes": 1388082,
+      "kb": 1355.5,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d329c88e447d42c4617b65_SpiceSt.Group_02.avif"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/67210621867751a15a07d46e/6785892bbcf87cd722aac7b0_Basil_Citrus_Blend_Dressing.png",
+      "bytes": 1378527,
+      "kb": 1346.2,
+      "path": "source/cdn/cdn.prod.website-files.com/67210621867751a15a07d46e/6785892bbcf87cd722aac7b0_Basil_Citrus_Blend_Dressing.png"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d329c8c7f11fceff125f10_SpiceSt.Group_03.avif",
+      "bytes": 1376816,
+      "kb": 1344.5,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d329c8c7f11fceff125f10_SpiceSt.Group_03.avif"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9dc1524581c012da74f_47617_L_01.webp",
+      "bytes": 1195380,
+      "kb": 1167.4,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9dc1524581c012da74f_47617_L_01.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e5d0b3c627aa0ee63d_46781_L_01.webp",
+      "bytes": 1126684,
+      "kb": 1100.3,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e5d0b3c627aa0ee63d_46781_L_01.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f7e57b807e0d2b48e7a0ff_SpiceSt_TacoNight_Stills_24.webp",
+      "bytes": 1110092,
+      "kb": 1084.1,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f7e57b807e0d2b48e7a0ff_SpiceSt_TacoNight_Stills_24.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e108f1bac4d1d59bf1_46789_L_01.webp",
+      "bytes": 1100592,
+      "kb": 1074.8,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e108f1bac4d1d59bf1_46789_L_01.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e53f3d164c3cf44510_46782_L_01.webp",
+      "bytes": 1079920,
+      "kb": 1054.6,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e53f3d164c3cf44510_46782_L_01.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e29ba9dcc51559ba64_46787_L_01.webp",
+      "bytes": 1064556,
+      "kb": 1039.6,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e29ba9dcc51559ba64_46787_L_01.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e11d5972d3de52bfd1_46791_L_01.webp",
+      "bytes": 1051304,
+      "kb": 1026.7,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e11d5972d3de52bfd1_46791_L_01.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d329c85a80528e52f581e1_SpiceSt.Group_06.avif",
+      "bytes": 1040776,
+      "kb": 1016.4,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d329c85a80528e52f581e1_SpiceSt.Group_06.avif"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e3aa6da1fc5f84c31e_46784_L_01.webp",
+      "bytes": 1025582,
+      "kb": 1001.5,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e3aa6da1fc5f84c31e_46784_L_01.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9dc769feacc57bf03df_46797_L_01.webp",
+      "bytes": 1014968,
+      "kb": 991.2,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9dc769feacc57bf03df_46797_L_01.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e883449644104529bc_46780_L_01.webp",
+      "bytes": 990100,
+      "kb": 966.9,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e883449644104529bc_46780_L_01.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9df08f1bac4d1d59a99_46792_L_01.webp",
+      "bytes": 979106,
+      "kb": 956.2,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9df08f1bac4d1d59a99_46792_L_01.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9dcdd4b17d13b07da62_47620_L_01.webp",
+      "bytes": 960536,
+      "kb": 938,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9dcdd4b17d13b07da62_47620_L_01.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e3769feacc57bf0848_46785_L_01.webp",
+      "bytes": 938998,
+      "kb": 917,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e3769feacc57bf0848_46785_L_01.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e32b224112babfa6ba_46783_L_01.webp",
+      "bytes": 889364,
+      "kb": 868.5,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9e32b224112babfa6ba_46783_L_01.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6840a8c3034f7c5148f5ce8c_AdobeStock_204891345.AVIF",
+      "bytes": 888838,
+      "kb": 868,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6840a8c3034f7c5148f5ce8c_AdobeStock_204891345.AVIF"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67605b601ab2752b5baff0c2_spice_st_mkt_bg_v1.avif",
+      "bytes": 887826,
+      "kb": 867,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67605b601ab2752b5baff0c2_spice_st_mkt_bg_v1.avif"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9da1524581c012da642_47619_L_01.webp",
+      "bytes": 868736,
+      "kb": 848.4,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f6f9da1524581c012da642_47619_L_01.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6840a8c311a14b1864c6cd6b_AdobeStock_214498764.AVIF",
+      "bytes": 787553,
+      "kb": 769.1,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6840a8c311a14b1864c6cd6b_AdobeStock_214498764.AVIF"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f7e5782a6dd515d5aee9b7_SpiceSt_TacoNight_Stills_22.webp",
+      "bytes": 664682,
+      "kb": 649.1,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f7e5782a6dd515d5aee9b7_SpiceSt_TacoNight_Stills_22.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f5869c35077b982de40755_SpiceSt_TacoNight_Stills_23.webp",
+      "bytes": 570602,
+      "kb": 557.2,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f5869c35077b982de40755_SpiceSt_TacoNight_Stills_23.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6840a8c2dfdb8f7005fab927_AdobeStock_308032794.AVIF",
+      "bytes": 535968,
+      "kb": 523.4,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6840a8c2dfdb8f7005fab927_AdobeStock_308032794.AVIF"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f7e578adf8d8fde4928329_SpiceSt_TacoNight_Stills_17.webp",
+      "bytes": 506254,
+      "kb": 494.4,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f7e578adf8d8fde4928329_SpiceSt_TacoNight_Stills_17.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d2fb3bbbbd0fc321f3b5b6_46786_L_01.avif",
+      "bytes": 495557,
+      "kb": 483.9,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d2fb3bbbbd0fc321f3b5b6_46786_L_01.avif"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f5869f0ebd57b3da45119b_SpiceSt_TacoNight_Stills_21.webp",
+      "bytes": 481214,
+      "kb": 469.9,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f5869f0ebd57b3da45119b_SpiceSt_TacoNight_Stills_21.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d2fb3bbbbd0fc321f3b5a6_47623_L_01.avif",
+      "bytes": 421658,
+      "kb": 411.8,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d2fb3bbbbd0fc321f3b5a6_47623_L_01.avif"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6824ae9851756903e8b0b40f_spice-st-recipes-bg-image.webp",
+      "bytes": 254030,
+      "kb": 248.1,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6824ae9851756903e8b0b40f_spice-st-recipes-bg-image.webp"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f7e5777ea8a4a02d31dd35_SpiceSt_TacoNight_Stills_7.avif",
+      "bytes": 243909,
+      "kb": 238.2,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f7e5777ea8a4a02d31dd35_SpiceSt_TacoNight_Stills_7.avif"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d2fb3bbbbd0fc321f3b551_46794_L_01.avif",
+      "bytes": 239866,
+      "kb": 234.2,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67d2fb3bbbbd0fc321f3b551_46794_L_01.avif"
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js",
+      "bytes": 181109,
+      "kb": 176.9,
+      "path": "source/cdn/cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.schunk.6d399de37024626f.js",
+      "bytes": 163743,
+      "kb": 159.9,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.schunk.6d399de37024626f.js"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/css/spicest.shared.a26f06735.min.css",
+      "bytes": 162130,
+      "kb": 158.3,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/css/spicest.shared.a26f06735.min.css"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
+      "bytes": 154597,
+      "kb": 151,
+      "path": "source/cdn/cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js",
+      "bytes": 143706,
+      "kb": 140.3,
+      "path": "source/cdn/cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js",
+      "bytes": 143046,
+      "kb": 139.7,
+      "path": "source/cdn/cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css",
+      "bytes": 141841,
+      "kb": 138.5,
+      "path": "source/cdn/cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    },
+    {
+      "url": "https://unpkg.com/swiper@7/swiper-bundle.min.js",
+      "bytes": 135912,
+      "kb": 132.7,
+      "path": "source/cdn/unpkg.com/swiper@7/swiper-bundle.min.js"
+    },
+    {
+      "url": "https://spicest.webflow.io/",
+      "bytes": 97981,
+      "kb": 95.7,
+      "path": "source/index.html"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67167048265253d733f6004b_Spice%20St.%20Market%20Logo%20-%20White.webp",
+      "bytes": 94892,
+      "kb": 92.7,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67167048265253d733f6004b_Spice_St._Market_Logo_-_White.webp"
+    },
+    {
+      "url": "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=665ec1cc5ff6a46b977004bc",
+      "bytes": 89476,
+      "kb": 87.4,
+      "path": "source/cdn/d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f7e57545faaba895bdb255_SpiceSt_TacoNight_Stills_20.avif",
+      "bytes": 86912,
+      "kb": 84.9,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/67f7e57545faaba895bdb255_SpiceSt_TacoNight_Stills_20.avif"
+    },
+    {
+      "url": "https://cdn.finsweet.com/files/cmslibrary-v1.7.js",
+      "bytes": 76768,
+      "kb": 75,
+      "path": "source/cdn/cdn.finsweet.com/cmslibrary-v1.7.js"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/665ec1cc5ff6a46b97700554_Chinook%20Regular.otf",
+      "bytes": 76116,
+      "kb": 74.3,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/665ec1cc5ff6a46b97700554_Chinook_Regular.otf"
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js",
+      "bytes": 71520,
+      "kb": 69.8,
+      "path": "source/cdn/cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    },
+    {
+      "url": "https://spicest.webflow.io/gallery",
+      "bytes": 60611,
+      "kb": 59.2,
+      "path": "source/gallery.html"
+    },
+    {
+      "url": "https://spicest.webflow.io/shop",
+      "bytes": 55401,
+      "kb": 54.1,
+      "path": "source/shop.html"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6769d6bdb8a155442f91f47c_Spice_St_Market_Favicon_256.avif",
+      "bytes": 49646,
+      "kb": 48.5,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6769d6bdb8a155442f91f47c_Spice_St_Market_Favicon_256.avif"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273bd1fd408ec371d0d_QuatroSlab-UltraBlackItalic.eot",
+      "bytes": 43494,
+      "kb": 42.5,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273bd1fd408ec371d0d_QuatroSlab-UltraBlackItalic.eot"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273fc262e8f5db96d03_QuatroSlab-UltraBlackItalic.ttf",
+      "bytes": 43260,
+      "kb": 42.2,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273fc262e8f5db96d03_QuatroSlab-UltraBlackItalic.ttf"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362731649da016683b946_QuatroSlab-MediumItalic.eot",
+      "bytes": 42862,
+      "kb": 41.9,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362731649da016683b946_QuatroSlab-MediumItalic.eot"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273c3208e9b64321b00_QuatroSlab-SemiBoldItalic.eot",
+      "bytes": 42818,
+      "kb": 41.8,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273c3208e9b64321b00_QuatroSlab-SemiBoldItalic.eot"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273bfa0f46d31e015d3_QuatroSlab-MediumItalic.ttf",
+      "bytes": 42644,
+      "kb": 41.6,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273bfa0f46d31e015d3_QuatroSlab-MediumItalic.ttf"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273520f02855d582f7c_QuatroSlab-SemiBoldItalic.ttf",
+      "bytes": 42592,
+      "kb": 41.6,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273520f02855d582f7c_QuatroSlab-SemiBoldItalic.ttf"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362732306383df81c4cfa_QuatroSlab-BoldItalic.ttf",
+      "bytes": 42512,
+      "kb": 41.5,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362732306383df81c4cfa_QuatroSlab-BoldItalic.ttf"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273b3d3fa4f6b54c8b1_QuatroSlab-Italic.eot",
+      "bytes": 42448,
+      "kb": 41.5,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273b3d3fa4f6b54c8b1_QuatroSlab-Italic.eot"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273e2411f180939f166_QuatroSlab-Italic.ttf",
+      "bytes": 42256,
+      "kb": 41.3,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273e2411f180939f166_QuatroSlab-Italic.ttf"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.schunk.1a807f015b216e46.js",
+      "bytes": 41969,
+      "kb": 41,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.schunk.1a807f015b216e46.js"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273662e81a84ec70f93_QuatroSlab-UltraBlack.eot",
+      "bytes": 40120,
+      "kb": 39.2,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273662e81a84ec70f93_QuatroSlab-UltraBlack.eot"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362732ac5ddc2ce7f676d_QuatroSlab-UltraBlack.ttf",
+      "bytes": 39896,
+      "kb": 39,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362732ac5ddc2ce7f676d_QuatroSlab-UltraBlack.ttf"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236274a68bc4657b282c0b_QuatroSlab-Medium.eot",
+      "bytes": 39816,
+      "kb": 38.9,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236274a68bc4657b282c0b_QuatroSlab-Medium.eot"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6823627301d78a33c295437d_QuatroSlab-Regular.eot",
+      "bytes": 39696,
+      "kb": 38.8,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6823627301d78a33c295437d_QuatroSlab-Regular.eot"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362738070a9dca3557811_QuatroSlab-Medium.ttf",
+      "bytes": 39608,
+      "kb": 38.7,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362738070a9dca3557811_QuatroSlab-Medium.ttf"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273d607552bb46fbcf7_QuatroSlab-Regular.ttf",
+      "bytes": 39500,
+      "kb": 38.6,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273d607552bb46fbcf7_QuatroSlab-Regular.ttf"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6823627366735b533858c09f_QuatroSlab-SemiBold.eot",
+      "bytes": 39368,
+      "kb": 38.4,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6823627366735b533858c09f_QuatroSlab-SemiBold.eot"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362735f8c3984ab5133b0_QuatroSlab-SemiBold.ttf",
+      "bytes": 39152,
+      "kb": 38.2,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362735f8c3984ab5133b0_QuatroSlab-SemiBold.ttf"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273e35438f4e573d55e_QuatroSlab-Bold.eot",
+      "bytes": 38988,
+      "kb": 38.1,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273e35438f4e573d55e_QuatroSlab-Bold.eot"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273520f02855d582f96_QuatroSlab-Bold.ttf",
+      "bytes": 38804,
+      "kb": 37.9,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273520f02855d582f96_QuatroSlab-Bold.ttf"
+    },
+    {
+      "url": "https://spicest.webflow.io/about",
+      "bytes": 35457,
+      "kb": 34.6,
+      "path": "source/about.html"
+    },
+    {
+      "url": "https://spicest.webflow.io/recipes",
+      "bytes": 35376,
+      "kb": 34.5,
+      "path": "source/recipes.html"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js",
+      "bytes": 23364,
+      "kb": 22.8,
+      "path": "source/cdn/cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273a68bc4657b282be4_QuatroSlab-SemiBoldItalic.woff",
+      "bytes": 21240,
+      "kb": 20.7,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273a68bc4657b282be4_QuatroSlab-SemiBoldItalic.woff"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362739f84b2cf941fb6a3_QuatroSlab-UltraBlackItalic.woff",
+      "bytes": 21160,
+      "kb": 20.7,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362739f84b2cf941fb6a3_QuatroSlab-UltraBlackItalic.woff"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6823627300c5979602e7a3e4_QuatroSlab-BoldItalic.woff",
+      "bytes": 20632,
+      "kb": 20.1,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6823627300c5979602e7a3e4_QuatroSlab-BoldItalic.woff"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273a7e087aa01cb1511_QuatroSlab-Italic.woff",
+      "bytes": 20156,
+      "kb": 19.7,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273a7e087aa01cb1511_QuatroSlab-Italic.woff"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236274f18e837e7d0b3bc0_QuatroSlab-SemiBold.woff",
+      "bytes": 19864,
+      "kb": 19.4,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236274f18e837e7d0b3bc0_QuatroSlab-SemiBold.woff"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362735a412a100163a606_QuatroSlab-Medium.woff",
+      "bytes": 19788,
+      "kb": 19.3,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362735a412a100163a606_QuatroSlab-Medium.woff"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362739eca65f3a1be206a_QuatroSlab-Bold.woff",
+      "bytes": 19040,
+      "kb": 18.6,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362739eca65f3a1be206a_QuatroSlab-Bold.woff"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6823627355a7b9c7703719c0_QuatroSlab-Regular.woff",
+      "bytes": 18784,
+      "kb": 18.3,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6823627355a7b9c7703719c0_QuatroSlab-Regular.woff"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
+      "bytes": 18454,
+      "kb": 18,
+      "path": "source/cdn/cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css",
+      "bytes": 18451,
+      "kb": 18,
+      "path": "source/cdn/cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css",
+      "bytes": 16493,
+      "kb": 16.1,
+      "path": "source/cdn/cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    },
+    {
+      "url": "https://use.typekit.net/lzk1lgm.js",
+      "bytes": 16427,
+      "kb": 16,
+      "path": "source/cdn/use.typekit.net/lzk1lgm.js"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273c92a95de7d12184b_QuatroSlab-SemiBoldItalic.woff2",
+      "bytes": 15976,
+      "kb": 15.6,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273c92a95de7d12184b_QuatroSlab-SemiBoldItalic.woff2"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273bcda26786a047f21_QuatroSlab-UltraBlackItalic.woff2",
+      "bytes": 15612,
+      "kb": 15.2,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273bcda26786a047f21_QuatroSlab-UltraBlackItalic.woff2"
+    },
+    {
+      "url": "https://unpkg.com/swiper@7/swiper-bundle.min.css",
+      "bytes": 15563,
+      "kb": 15.2,
+      "path": "source/cdn/unpkg.com/swiper@7/swiper-bundle.min.css"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362739c1e2d99720846f2_QuatroSlab-MediumItalic.woff2",
+      "bytes": 15508,
+      "kb": 15.1,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362739c1e2d99720846f2_QuatroSlab-MediumItalic.woff2"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6823627338ac84ea140dce1f_QuatroSlab-BoldItalic.woff2",
+      "bytes": 15336,
+      "kb": 15,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6823627338ac84ea140dce1f_QuatroSlab-BoldItalic.woff2"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273723ce1c55aa51122_QuatroSlab-Italic.woff2",
+      "bytes": 14868,
+      "kb": 14.5,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236273723ce1c55aa51122_QuatroSlab-Italic.woff2"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362733b0b83749032161e_QuatroSlab-SemiBold.woff2",
+      "bytes": 14856,
+      "kb": 14.5,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362733b0b83749032161e_QuatroSlab-SemiBold.woff2"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362731a24265b120a5f2e_QuatroSlab-Medium.woff2",
+      "bytes": 14716,
+      "kb": 14.4,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362731a24265b120a5f2e_QuatroSlab-Medium.woff2"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362733d31d246f327badc_QuatroSlab-UltraBlack.woff2",
+      "bytes": 14216,
+      "kb": 13.9,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/682362733d31d246f327badc_QuatroSlab-UltraBlack.woff2"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236274f18e837e7d0b3bae_QuatroSlab-Bold.woff2",
+      "bytes": 13984,
+      "kb": 13.7,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/68236274f18e837e7d0b3bae_QuatroSlab-Bold.woff2"
+    },
+    {
+      "url": "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+      "bytes": 13188,
+      "kb": 12.9,
+      "path": "source/cdn/ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+    },
+    {
+      "url": "https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg",
+      "bytes": 11068,
+      "kb": 10.8,
+      "path": "source/cdn/d3e54v103j8qbb.cloudfront.net/img/background-image.svg"
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js",
+      "bytes": 10066,
+      "kb": 9.8,
+      "path": "source/cdn/cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.schunk.d659be6dcd9af708.js",
+      "bytes": 9102,
+      "kb": 8.9,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.schunk.d659be6dcd9af708.js"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.schunk.3646b0bdbfc7a235.js",
+      "bytes": 8643,
+      "kb": 8.4,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.schunk.3646b0bdbfc7a235.js"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6769d6baf5303bf5d46e840c_Spice_St_Market_Favicon_32.avif",
+      "bytes": 4717,
+      "kb": 4.6,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6769d6baf5303bf5d46e840c_Spice_St_Market_Favicon_32.avif"
+    },
+    {
+      "url": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fitty.min.js",
+      "bytes": 3620,
+      "kb": 3.5,
+      "path": "source/cdn/s3-us-west-2.amazonaws.com/fitty.min.js"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/665ec1cc5ff6a46b97700563_Eyes%201.avif",
+      "bytes": 3604,
+      "kb": 3.5,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/665ec1cc5ff6a46b97700563_Eyes_1.avif"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.schunk.4913f0d9ee368d76.js",
+      "bytes": 3250,
+      "kb": 3.2,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.schunk.4913f0d9ee368d76.js"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/665ec1cc5ff6a46b97700561_Eyes%206.avif",
+      "bytes": 2737,
+      "kb": 2.7,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/665ec1cc5ff6a46b97700561_Eyes_6.avif"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/665ec1cc5ff6a46b97700562_Eyes%202.avif",
+      "bytes": 2729,
+      "kb": 2.7,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/665ec1cc5ff6a46b97700562_Eyes_2.avif"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.9945d0ae.ebaa85513b62bfb2.js",
+      "bytes": 1923,
+      "kb": 1.9,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.9945d0ae.ebaa85513b62bfb2.js"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.c879f0f6.a3bccc1e781bc643.js",
+      "bytes": 1907,
+      "kb": 1.9,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.c879f0f6.a3bccc1e781bc643.js"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.565ec2dd.481b9a7e3b200f22.js",
+      "bytes": 1893,
+      "kb": 1.8,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.565ec2dd.481b9a7e3b200f22.js"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.4f243402.11bfb7e3ac6a6c79.js",
+      "bytes": 1875,
+      "kb": 1.8,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/js/spicest.4f243402.11bfb7e3ac6a6c79.js"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6761e282003db0fc32b7b207_Group%206.avif",
+      "bytes": 1012,
+      "kb": 1,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6761e282003db0fc32b7b207_Group_6.avif"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6761e282003db0fc32b7b20d_search.png",
+      "bytes": 886,
+      "kb": 0.9,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6761e282003db0fc32b7b20d_search.png"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/665ec1cc5ff6a46b97700581_Vector.png",
+      "bytes": 562,
+      "kb": 0.5,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/665ec1cc5ff6a46b97700581_Vector.png"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/665ec1cc5ff6a46b97700584_icon_chevron.svg",
+      "bytes": 517,
+      "kb": 0.5,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/665ec1cc5ff6a46b97700584_icon_chevron.svg"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/665ec1cc5ff6a46b97700580_Facebook.png",
+      "bytes": 298,
+      "kb": 0.3,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/665ec1cc5ff6a46b97700580_Facebook.png"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6761e282003db0fc32b7b218_chevron-down.png",
+      "bytes": 276,
+      "kb": 0.3,
+      "path": "source/cdn/cdn.prod.website-files.com/665ec1cc5ff6a46b977004bc/6761e282003db0fc32b7b218_chevron-down.png"
+    }
+  ]
+}

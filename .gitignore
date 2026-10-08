@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.tmp/
+.DS_Store
+*.log
+.wrangler/
+.dev.vars
+.mf/
+.env
+.env.*
+source/cdn/**/*.mp4
+source/cdn/**/*.webm

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}" />
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:description" content="{{description}}" />
+  <meta property="og:image" content="/images/og-1200.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#510604" />
+  <link rel="icon" href="/images/favicon-32.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon-180.png" />
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body data-page="{{page}}">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-nav>
+    <div class="header-inner">
+      <a class="logo" href="/" aria-label="Spice St. Market home">
+        <picture>
+          <source type="image/avif" srcset="/images/logo-400.avif" />
+          <source type="image/webp" srcset="/images/logo-400.webp" />
+          <img src="/images/logo-400.webp" width="400" height="120" alt="Spice St. Market" />
+        </picture>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="site-nav" data-nav-menu>
+        <li><a href="/" {{navHome}}>Home</a></li>
+        <li><a href="/about.html" {{navAbout}}>About</a></li>
+        <li><a href="/recipes.html" {{navRecipes}}>Recipes</a></li>
+        <li><a href="/gallery.html" {{navGallery}}>Gallery</a></li>
+        <li><a href="/contact.html" {{navContact}}>Contact</a></li>
+        <li><a class="nav-cta" href="https://www.amazon.com/s?k=Spice+St.+Market" target="_blank" rel="noopener noreferrer">Shop Amazon</a></li>
+      </ul>
+    </div>
+  </header>
+  <main id="main">
+    {{content}}
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>If you ain't sneezin, you ain't seasonin</h2>
+        <p>Spice blends for young adults who want to spice up everyday food. Sold on Amazon.</p>
+      </div>
+      <div>
+        <h3>Menu</h3>
+        <ul class="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/recipes.html">Recipes</a></li>
+          <li><a href="/gallery.html">Gallery</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Shop</h3>
+        <ul class="footer-links">
+          <li><a href="https://www.amazon.com/Spice-St-Market-Favorites-Seasoning/dp/B0F1BZRLC9" target="_blank" rel="noopener noreferrer">Familiar Favorites</a></li>
+          <li><a href="https://www.amazon.com/s?k=Spice+St.+Market" target="_blank" rel="noopener noreferrer">All packs on Amazon</a></li>
+          <li><a href="/contact.html">Join the party</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© {{year}} Spice St. Market. All rights reserved.</span>
+      <span>42 W 39th St. New York, NY</span>
+    </div>
+  </footer>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
