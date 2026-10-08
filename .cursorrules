@@ -1,25 +1,26 @@
 # Spice St. Market — Cursor Rules
 
 project_goals:
-  - Lean static rebuild of the Webflow brand site for Cloudflare Workers.
-  - Preserve brand voice, pack storytelling, and spice imagery.
-  - Prefer seamless scroll motion and page transitions that feel street / bodega / spice-forward.
+  - Faithful static port of the Webflow brand site for Cloudflare Workers.
+  - Preserve Webflow markup, shared CSS, custom code, and spice imagery.
+  - Match spicest.webflow.io / spicestmarket.com visually; enhance motion without redesigning.
 
 editing_guidelines:
   - Preserve indentation and formatting.
   - Avoid unrelated refactors; keep edits tightly scoped.
-  - Do not rename asset paths in source/cdn or dist/images without updating build jobs.
+  - Do not rename asset paths in source/cdn without updating scrape/build URL rewrites.
   - Prefer small, self-contained edits with descriptive commit messages.
 
 technology_direction:
-  - Vanilla HTML + CSS + JS modules bundled with esbuild.
-  - GSAP + ScrollTrigger + Lenis for motion; respect prefers-reduced-motion.
-  - Content lives in src/data/*.json (no Airtable sync in this repo).
-  - Build pipeline: scrape → optimize images → minify → dist/ → wrangler deploy.
+  - Port scraped Webflow HTML; do not invent a parallel design system.
+  - Keep jQuery, webflow.js chunks, Swiper stacks, GSAP custom embeds intact.
+  - Optional Lenis + View Transitions in src/js/enhance.js and src/styles/enhance.css.
+  - Respect prefers-reduced-motion for the enhance layer only.
+  - Build pipeline: scrape → rewrite URLs / copy CDN → dist/ → wrangler deploy.
 
 repository_conventions:
   - Automation in scripts/
-  - Hand-built site in src/
+  - Thin enhance layer in src/
   - Untouched scrape baseline in source/
   - Commit messages: chore|feat|fix|docs: short description
 
@@ -29,5 +30,5 @@ brand:
   - CTAs drive to Amazon spice packs
 
 accessibility:
-  - Keyboard-navigable pack tabs and lightbox
+  - Preserve Webflow keyboard nav for tabs and sliders
   - Sufficient contrast; no motion-only information

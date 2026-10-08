@@ -1,0 +1,8 @@
+strings: ['RESPECT', 'FAMILY', 'NETWORK'],
+    typeSpeed: 0,
+    backSpeed: 0,
+    backDelay: 1000,
+    cursorChar: '',
+    smartBackspace: true, 
+    fadeOut: true,
+    loop: true

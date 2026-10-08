@@ -1,0 +1,17 @@
+Please keep this css code to improve the font quality-->
+<style>
+  * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+</style>
+
+<style>
+[fade-up], [carousel="wrap"] { 
+	opacity: 0;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+<!-- You can remove this -->
+<meta name="facebook-domain-verification
