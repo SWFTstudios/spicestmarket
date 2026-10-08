@@ -1,7 +1,7 @@
 ## Spice St. Market — Project Instructions
 
 ### Overview
-Lean rebuild of the Spice St Market Webflow site for Cloudflare Workers. Design and imagery come from Webflow; pack copy comes from the live site. Motion uses GSAP + ScrollTrigger + Lenis.
+Lean rebuild of the Spice St Market Webflow site for Cloudflare Workers. Design and imagery come from Webflow site **665ec1cc5ff6a46b977004bc** (`spicest.webflow.io`). Motion uses GSAP + ScrollTrigger + Lenis.
 
 ### Setup
 ```bash
@@ -17,7 +17,7 @@ npm run deploy   # build + deploy to Cloudflare Workers
 | Path | Purpose |
 |------|---------|
 | `source/` | Untouched scrape of published Webflow pages (baseline) |
-| `src/` | Hand-built HTML, CSS, JS, fonts, data |
+| `src/` | Hand-built CSS, JS, fonts, data |
 | `src/data/` | Packs, recipes, gallery JSON |
 | `dist/` | Production output |
 | `scripts/` | scrape, fonts, build pipelines |
@@ -26,10 +26,11 @@ npm run deploy   # build + deploy to Cloudflare Workers
 Edit `src/data/packs.json`, `recipes.json`, or `gallery.json`, then `npm run build`.
 
 ### Deploy
-Pushes to `main` should auto-build via Cloudflare Workers Builds (`npm run build` → `npx wrangler deploy`). Manual: `npm run deploy`.
+- Live: https://spicestmarket.elombe.workers.dev
+- Repo: https://github.com/SWFTstudios/spicestmarket
+- Pushes to `main` auto-build via Cloudflare Workers Builds (`npm run build` → `npx wrangler deploy`).
 
 ### Active todos
-- [x] Scaffold repo + Cloudflare Worker
 - [ ] Wire custom domain spicestmarket.com when zone is in this Cloudflare account
 - [ ] Add Amazon URLs for Neighborhood Cook-Out and Around the World packs
 - [ ] Connect newsletter provider
